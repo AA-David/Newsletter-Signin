@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Newsletter Signin</title>
+</head>
+<body class="min-h-screen bg-gradient-to-t to-gray-700 from-darkSlateGrey">
+    <section class="flex-row-reverse mx-auto h-screen bg-white transition-all duration-200 sm:pb-11 sm:w-2/3 md-lg:h-fit md-lg:flex sm:h-fit sm:mt-10 sm:rounded-3xl md-lg:w-[70%] md-lg:p-6 md-lg:mt-32 md-lg:rounded-3xl md:w-7/12 md:mb-3 md:mt-3 lg:max-w-3xl">
+        <picture class="transition-all duration-200 lg:flex-1 md-lg:ml-6 mb:5">
+            <source media="(min-width: 1200px)" srcset="./images/illustration-sign-up-desktop.svg">
+            <img class="mb-5 w-full sm:rounded-t-3xl md-lg:mb-0" src="./images/illustration-sign-up-mobile.svg" alt="Illustration">
+        </picture>
+
+        <div class="mx-auto w-4/5 transition-all duration-200 lg:flex-1">
+            <h3 class="mb-5 text-4xl font-bold lg:text-5xl md:text-[2.75rem]">Stay updated!</h3>
+            <p class="mb-4 lg:text-xl md:text-2xl">Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <ul class="list-image-[url(images/icon-list.svg)] list-outside space-y-3 ml-6 mb-7">
+                <li class="pl-1 lg:text-xl md:text-[1.3rem]">Product discovery and buliding what matters</li>
+                <li class="pl-1 lg:text-xl md:text-[1.3rem]">Measuring to ensure updates are a success</li>
+                <li class="pl-1 lg:text-xl md:text-[1.3rem]">And much more!</li>
+            </ul>
+
+            <form onsubmit="return false">
+                <label class="mb-10 text-xl font-bold">Email address</label>
+                <input required type="email" name="email" placeholder="email@company.com" class="p-4 mt-1 mb-5 w-full rounded-lg border border-grey">
+                <button type="submit" class="relative z-10 p-4 w-full font-bold text-white rounded-lg shadow-lg transition-all hover:opacity-0 lg:text-lg bg-darkSlateGrey submit shadow-grey">Subscribe to montly newsletter</button>
+                <button type="submit" class="relative -top-[60px] p-4 w-full font-bold text-white rounded-lg lg:text-lg bg-gradient-to-r from-tomato to-pink submit shadow-tomato/40 shadow-lg">Subscribe to montly newsletter</button>
+            </form>
+        </div> 
+
+        <!-- Success Message -->
+        <div class="absolute top-0 left-0 px-6 pt-36 h-screen bg-white opacity-0 transition-all duration-200 -z-10 success sm:h-fit sm:p-10 sm:max-w-lg sm:rounded-3xl sm:mt-10 sm:left-auto sm:translate-x-[5%] sm:px-36">
+            <img src="./images/icon-list.svg" alt="Checkmark" class="mb-6 w-20">
+
+            <h3 class="mb-5 text-4xl font-bold">Thanks for subscribing!</h3>
+            <p class="mb-12">A confirmation email has been sent to <span class="font-bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
+
+            <button class="p-4 w-full font-bold text-white rounded-lg bg-darkSlateGrey dismiss">Dismiss message</button>
+        </div>
+    </section> 
+</body>
+</html>
